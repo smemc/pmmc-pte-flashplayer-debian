@@ -3,7 +3,7 @@ Section: contrib/x11
 Priority: extra
 Maintainer: Laércio de Sousa <lbsousajr@gmail.com>
 XSBC-Original-Maintainer: Bart Martens <bartm@knars.be>
-Build-Depends: debhelper (>= 9.0.0), wget
+Build-Depends: debhelper (>= 8.0.0), wget
 Standards-Version: 3.9.3
 Homepage: http://www.adobe.com/products/flashplayer.html
 Vcs-Git: git://github.com/oiteam/pmmc-pte-flashplayer-debian.git
