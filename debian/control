@@ -21,9 +21,7 @@ Description: Transitional package to pmmc-pte-flashplayer
 Package: pmmc-pte-flashplayer
 Architecture: i386
 Multi-Arch: foreign
-Depends: ${shlibs:Depends}, ${misc:Depends}, fontconfig
-Suggests: x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
-Recommends: libasound2-plugins (>= 1.0.16)
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: pmmc-pte-flashplayer-installer (<< ${binary:Version})
 Replaces: pmmc-pte-flashplayer-installer (<< ${binary:Version})
 Provides: pmmc-pte-flashplayer-installer
