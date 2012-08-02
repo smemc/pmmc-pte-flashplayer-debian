@@ -1,0 +1,38 @@
+Source: pmmc-pte-flashplayer
+Section: contrib/x11
+Priority: extra
+Maintainer: Laércio de Sousa <lbsousajr@gmail.com>
+XSBC-Original-Maintainer: Bart Martens <bartm@knars.be>
+Build-Depends: debhelper (>= 9.0.0), wget
+Standards-Version: 3.9.3
+Homepage: http://www.adobe.com/products/flashplayer.html
+Vcs-Git: git://github.com/oiteam/pmmc-pte-flashplayer-debian.git
+Vcs-Browser: https://github.com/oiteam/pmmc-pte-flashplayer-debian.git
+
+Package: pmmc-pte-flashplayer-installer
+Architecture: i386
+Multi-Arch: foreign
+Section: contrib/oldlibs
+Depends: ${misc:Depends}, pmmc-pte-flashplayer (= ${binary:Version})
+Description: Transitional package to pmmc-pte-flashplayer
+ This is just a dummy transitional package to new pmmc-pte-flashplayer.
+ It can be safely removed after pmmc-pte-flashplayer is installed.
+
+Package: pmmc-pte-flashplayer
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, fontconfig
+Suggests: x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
+Recommends: libasound2-plugins (>= 1.0.16)
+Conflicts: pmmc-pte-flashplayer-installer (<< ${binary:Version})
+Replaces: pmmc-pte-flashplayer-installer (<< ${binary:Version})
+Provides: pmmc-pte-flashplayer-installer
+Description: Adobe Flash Player Projector installer (for PTE-PMMC purposes)
+ This metapackage downloads and Installs the Adobe Flash Player Projector.
+ The Adobe Flash Player standalone projector supports playing of SWF files
+ with no need of a browser.
+ .
+ WARNING: Installing this Ubuntu package causes the Adobe Flash Player
+ projector to be downloaded from the Adobe web site. The distribution license
+ of the Adobe Flash Player projector is available at www.adobe.com. Installing
+ this Ubuntu package implies that you have accepted the terms of that license.
