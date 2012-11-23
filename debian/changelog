@@ -1,3 +1,9 @@
+pmmc-pte-flashplayer (11.2.202.251-1) unstable; urgency=low
+
+  * [c32fc8e] Imported Upstream version 11.2.202.251
+
+ -- Laércio de Sousa <lbsousajr@gmail.com>  Fri, 23 Nov 2012 08:51:04 -0200
+
 pmmc-pte-flashplayer (11.2.202.243-1) unstable; urgency=low
 
   * [2a09595] Imported Upstream version 11.2.202.243
